@@ -3,7 +3,7 @@ Clase[] objetos;
 
 // Objeto tabla para manejar la base de datos
 Table tabla;
-Clase o;
+
 
 
 void setup() {
@@ -31,6 +31,7 @@ void setup() {
 	// Con el, podemos ir a los métodos para hacer paridad entre el dato y el constructor		// La paridad debe ser exacta en caracteres
 	// Una variable del constructor por cada variable del dato (que queramos)
     // En la base de datos del ejemplo son 4, pero acá se muestran 3
+    //String fecha = row.getString("PET");
     String dia = row.getString("D");
     String mes = row.getString("M");
     String ano =row.getString("A");
@@ -38,7 +39,8 @@ void setup() {
     int minima = row.getInt("Min TemperatureC");
 
     // Con esas variables construyo un objeto
-    objetos[i] = new Clase(dia,mes,ano, maxima, minima);
+    objetos[i] = new Clase(dia,mes,ano, maxima, minima); //BD Pequeña
+//objetos[i] = new Clase(maxima, minima,fecha);
   }
 
 }
