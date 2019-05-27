@@ -8,7 +8,7 @@ Table tabla;
 
 void setup() {
   size(600,600);
-
+  background(255);
 
   // cargar la base de datos con el parámetro de cabecera
   // no es necesario la ruta /data, Processing lee por defecto
@@ -32,27 +32,35 @@ void setup() {
 	// Una variable del constructor por cada variable del dato (que queramos)
     // En la base de datos del ejemplo son 4, pero acá se muestran 3
     //String fecha = row.getString("PET");
-    String dia = row.getString("D");
-    String mes = row.getString("M");
-    String ano =row.getString("A");
-    int maxima = row.getInt("Max TemperatureC");
-    int minima = row.getInt("Min TemperatureC");
+    String fecha = row.getString("PET");
+    int maximaT = row.getInt("Max TemperatureC");
+    int minimaT = row.getInt("Min TemperatureC");
+
+    int maximaH = row.getInt("Max Humidity");
+    int minimaH = row.getInt(" Min Humidity");
+
 
     // Con esas variables construyo un objeto
-    objetos[i] = new Clase(dia,mes,ano, maxima, minima); //BD Pequeña
-//objetos[i] = new Clase(maxima, minima,fecha);
+    objetos[i] = new Clase(fecha, maximaT, minimaT,maximaH, minimaH);
+
   }
 
 }
 
 void draw() {
 
-background(255);
+//background(255);
 	// Uso de los objetos como siempre
 	 for (int i = 0; i < objetos.length; i ++) {
-	   objetos[i].funcion(objetos[i].maxima);
+	   objetos[i].funcion(objetos[i].maximaH);
      objetos[i].texto(i);
 
 
 	}
+}
+
+void keyPressed() {
+  if (key == 'c' || key == 'C') { //detiene el sketch
+    saveFrame("pantallazo-######.png");
+  }
 }
