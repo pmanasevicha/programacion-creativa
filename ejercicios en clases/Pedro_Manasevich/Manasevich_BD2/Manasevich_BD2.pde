@@ -49,10 +49,10 @@ void setup() {
 
 void draw() {
 
-//background(255);
+background(255);
 	// Uso de los objetos como siempre
 	 for (int i = 0; i < objetos.length; i ++) {
-	   objetos[i].funcion(objetos[i].maximaH);
+	   objetos[i].funcion(objetos[i].maximaT);
      objetos[i].texto(i);
 
 
