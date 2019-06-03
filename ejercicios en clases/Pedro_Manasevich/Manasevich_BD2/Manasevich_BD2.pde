@@ -52,8 +52,9 @@ void draw() {
 background(255);
 	// Uso de los objetos como siempre
 	 for (int i = 0; i < objetos.length; i ++) {
-	   objetos[i].funcion(objetos[i].maximaT);
-     objetos[i].texto(i);
+	   objetos[i].funcion(objetos[i].maximaT,i,i);
+    // objetos[i].texto(i);
+     objetos[i].movimiento(i,i);
 
 
 	}
