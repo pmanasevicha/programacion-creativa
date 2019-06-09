@@ -9,10 +9,10 @@ void setup() {
   size(1000, 1000);
   // inicalizamos el array con la cantidad de filas del archivo
   int total = tabla.getRowCount(); //entrega el largo de la base de datos
-  objetos = new Clase[total]; 
+  objetos = new Clase[total];
 
   // lo mismo se puede escribir en una línea de código
-  objetos = new Clase[tabla.getRowCount()]; 
+  objetos = new Clase[tabla.getRowCount()];
 
   // Iterar por la base de datos y llenar el array con esa información, creando un objeto por dato
 
