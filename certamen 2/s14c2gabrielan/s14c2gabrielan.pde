@@ -6,9 +6,9 @@
 /*AQUÍ SE PODRÁ VER LA REPRESENTACIÓN DE LOS DATOS DEL AÑO 2015, ESTO SE LOGRARÁ MEDIANTE ELIPSES Y LÍNEAS.
 LOS DATOS A EVALUAR SON LOS SIGUIENTES: TEMPERATURA, HUMEDAD, VIENTO, NEBLINA Y VISIBILIDAD
 CON LAS TECLAS "a - q - d - f - g - h - w - e - r - S" PODRÁN CAMBIAR DE VISUALIZACIÓN ENTRE LA INICIAL, TEMPERATURA ANUAL MÁS DE CERCA,
-HUMEDAD ANUAL MÁS DE CERCA, VIENTO ANUAL MÁS DE CERCA, NEBLINA ANUAL  MÁS DE CERCA, VISIBILIDAD ANUAL MÁS DE CERCA, COMPARACIÓN DE 
+HUMEDAD ANUAL MÁS DE CERCA, VIENTO ANUAL MÁS DE CERCA, NEBLINA ANUAL  MÁS DE CERCA, VISIBILIDAD ANUAL MÁS DE CERCA, COMPARACIÓN DE
 TEM-HUM-NEB-VIS, COMPARACIÓN PRIMER SEMESTRE ENTRE NEBLINA Y VISIBILIDAD, COMPARACIÓN SEGUNDO SEMESTRE ENTRE TEMPERATURA Y HUMEDAD, GUARDAR
-EN FORMATO TIFF RESPECTIVAMENTE. 
+EN FORMATO TIFF RESPECTIVAMENTE.
 EL VIENTO ANUAL Y LAS COMPARACIONES SEMESTRALES ESTARÁN REPRESENTADAS MEDIANTE LINEAS, MIENTRAS QUE LOS DEMÁS DATOS SERÁN REPRESENTADOS
 POR ELIPSES.
 LOS COLORES A UTILIZAR SON: TURQUESA, BLANCO, VERDE, AMARILLO, NARANJO Y MAGENTA
@@ -24,7 +24,7 @@ boolean guardarTIFF;
 color tu, bl, ve, ne, am, ma, na;
 
 void setup() {
-  // Tamaño del canvas 
+  // Tamaño del canvas
   size(1000, 800);
   //fullScreen();
   // Color del fondo
@@ -37,12 +37,12 @@ void setup() {
   ne = color(0);                            // Negro no se usa
   am = color(254, 255, 6);                  // Amarillo
   na = color(255, 128, 0);                  // Naranjo
-  ma = color(199, 21, 133);                 // Magenta  
+  ma = color(199, 21, 133);                 // Magenta
   c= 1;
   guardarTIFF = false;
 
   // Se carga la tabla
-  tabla = loadTable("basedatos.csv", "header"); 
+  tabla = loadTable("basedatos.csv", "header");
   o = new Objeto[tabla.getRowCount()];
 
   //Tipografía
@@ -50,7 +50,7 @@ void setup() {
   chico = createFont("HelveticaNeue-Light ", 15);
 
   // Se lee la tabla
-  for (int i = 0; i < tabla.getRowCount(); i++) {       
+  for (int i = 0; i < tabla.getRowCount(); i++) {
     int in = i;
     TableRow row = tabla.getRow(i);
 
@@ -124,13 +124,13 @@ void draw() {
   if (c == 2) {
     background(0);
     textFont(chico);
-    fill(bl); 
+    fill(bl);
     text("Teclas: a - q - d - f - g - h - w - e -r ", 700, 760);
     text("Base de Datos Humedad Anual, 2015", 30, 760);
     fill(ma);
     text("Color Magenta: Humedad Máxima", 700, 30);
     fill(am);
-    text("Color Amarilla: Humedad Media", 700, 50);    
+    text("Color Amarilla: Humedad Media", 700, 50);
     fill(ve);
     text("Color Verde: Humedad Mínima ", 700, 70);
   }
@@ -235,7 +235,7 @@ void draw() {
     text("Turquesa: Neblina Mínima", 150, 50);
     fill(ma);
     text("Magenta: Visibilidad Máxima", 600, 30);
-    fill(bl);    
+    fill(bl);
     text("Blanco: Visibilidad Mínima", 600, 50);
     text("Base de Datos Primer Semestre Neblina y Visibilidad, 2015", 30, 760);
     text("Teclas: a - q - d - f - g - h - w - e -r ", 700, 760);
@@ -257,7 +257,7 @@ void draw() {
     text("Verde: Temperatura Mínima", 150, 50);
     fill(am);
     text("Amarillo: Humedad Máxima", 600, 30);
-    fill(bl);    
+    fill(bl);
     text("Blanco: Humedad Mínima", 600, 50);
     text("Base de Datos Segundo Semestre Temperatura y Humedad, 2015", 30, 760);
     text("Teclas: a - q - d - f - g - h - w - e -r ", 700, 760);
@@ -275,8 +275,8 @@ void keyPressed() {
   if (key == 's') {
     guardarTIFF = true;                    // Guarda el proceso
     saveFrame("s14c2gabriela.tiff");
-  }   
-  if ( key == 'q') {                       //Al apretar a tecla q cambia y te muestra la visualización anual de Temperatura 
+  }
+  if ( key == 'q') {                       //Al apretar a tecla q cambia y te muestra la visualización anual de Temperatura
     c = 0;
   }
   if (key == 'a') {                        //Al apretar a tecla a cambia y te muestra la visualización anual de Inicio (nombre, ramo, fecha)

@@ -40,13 +40,15 @@ class Objeto {
   }
 
 
+
+
   /* EN ESTE VOID LO QUE SE HARÁ SERÁ REPRESENTAR MEDIANTE ELIPSES EL AÑO 2015.
    EL DATO A EVALUAR SON LA MÁXIMA, MEDIA Y MÍNIMA DE LA TEMPERATURA.
    LOS COLORES A UTILIZAR SON TURQUESA, BLANCO, MAGENTA.
    ESTE DATO SERÁ COMPARADO CON 3 DATOS MÁS.*/
   // VOID TEMPERATURA
   void temperatura() {
-    float si = map(minT, 20, 32, 0, 1);  
+    float si = map(minT, 20, 32, 0, 1);
     float sip = map(mediaT, 24, 31, 0, 1);
     float sipo = map(maxT, 29, 35, 0, 1);
 
@@ -56,7 +58,7 @@ class Objeto {
     rotate(radians(in * 360/ 365 ));                                 // POSICIÓN
     strokeWeight(2);                                                 // GROSOR DE LINEA 2 px
     stroke(bl);                                                      // COLOR BLANCO
-    ellipse(minT*4.5, 0, si, 0);              
+    ellipse(minT*4.5, 0, si, 0);
     popMatrix();
 
     // MÍNIMA TEMPERATURA
@@ -130,7 +132,7 @@ class Objeto {
     float nube = map(windmedia, 2, 37, 0, 1);
     float nubes = map(windmax, 8, 167, 0, 1);
 
-    // VIENTO 
+    // VIENTO
     pushMatrix();
     translate(width / 2, height / 2);
     rotate(radians(in * 360 / 365));                                 // POSICIÓN
@@ -139,7 +141,7 @@ class Objeto {
     line(wind, 0, nub, 0);
     popMatrix();
 
-    // MEDIA VIENTO 
+    // MEDIA VIENTO
     pushMatrix();
     translate(width / 2, height / 2);
     rotate(radians(in * 360 / 365));                                 // POSICIÓN
@@ -148,12 +150,12 @@ class Objeto {
     line(windmedia, 0, nube, 0);
     popMatrix();
 
-    // MÁXIMO VIENTO 
+    // MÁXIMO VIENTO
     pushMatrix();
     translate(width / 2, height / 2);
     rotate(radians(in * 360 / 365));                                 // POSICIÓN
     strokeWeight(2);                                                 // GROSOR DE LINEA 2 px
-    stroke(bl, 60);                                                  // COLOR BLANCO CON TRANSPARENCIA 
+    stroke(bl, 60);                                                  // COLOR BLANCO CON TRANSPARENCIA
     line(windmax, 0, nubes, 0);
     popMatrix();
   }
@@ -246,7 +248,7 @@ class Objeto {
    LOS COLORES A UTILIZAR SON TURQUESA, AMARILLO, NARANJO
    AQUÍ SE VE A MAS DETALLE (MÁS DE CERCA) LOS DATOS ANUALES*/
   void temperatura1() {
-    float si = map(minT, 23, 28, 0, 1);  
+    float si = map(minT, 23, 28, 0, 1);
     float sip = map(mediaT, 24, 30, 0, 1);
     float sipo = map(maxT, 29, 35, 0, 1);
 
