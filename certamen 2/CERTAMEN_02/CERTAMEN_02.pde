@@ -47,7 +47,7 @@ void setup() {
   voctubre = new Viento[31];
   vnoviembre = new Viento[30];
   vdiciembre = new Viento[31];
-  
+
 //localizaciones
   for (int i = 0; i < 31; i ++) { //Meses 31
     venero[i] = new Viento(50, (i+1)*25, baseDatos.getFloat(i, 3));
