@@ -114,6 +114,11 @@ void textsem(){
     //////////////////
     ////ENERO/////////
     //////////////////
+
+		/*
+		Todas estas funciones pueden ser solo una que recibe los parámetros necesarios para modificarse y no repetir 11 veces más la misma función
+
+		*/
       pushMatrix();
         promrociomed = 23;
         translate(150, 150);//origen en el centro del mes
