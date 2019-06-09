@@ -27,7 +27,7 @@ class Clase {
 
     textSize(10);
     fill(196, 23, 14);
-    text("Maxima Temperatura", 200, 100); 
+    text("Maxima Temperatura", 200, 100);
     frameRate(500);
     if (raio >200) raio=-200;
     fill(196, 23, 14);
@@ -47,11 +47,11 @@ class Clase {
     //    fill(196, 23, 14);
     //ellipse(100, 100, maxima, maxima);
     popMatrix();
-    
-    
+
+
         textSize(10);
     fill(237, 218, 38);
-    text("Minima Temperatura", 200, 115); 
+    text("Minima Temperatura", 200, 115);
     frameRate(5);
     if (raio >10) raio=-10;
     float a;
@@ -72,8 +72,10 @@ class Clase {
   void dewpointc() {
     textSize(10);
     fill(28, 255, 238);
-    text("Maximo Punto Rocio", 350, 250); 
-    frameRate(5);
+    text("Maximo Punto Rocio", 350, 250);
+
+		frameRate(5);
+
     if (raio >10) raio=-10;
     float c;
     float d;
@@ -87,10 +89,10 @@ class Clase {
     if (corR>255)
       corR=0;
     raio=raio+20.0/40;
-    
+
         textSize(10);
     fill(157, 233, 255);
-    text("Minimo Punto Rocio", 350, 265); 
+    text("Minimo Punto Rocio", 350, 265);
     frameRate(5);
     if (raio >10) raio=-10;
     float f;
@@ -108,11 +110,11 @@ class Clase {
   }
 
 
-  
+
   void humidity() {
      textSize(10);
     fill(5, 160, 148);
-    text("Maxima Humedad", 850, 550); 
+    text("Maxima Humedad", 850, 550);
     frameRate(5);
     if (raio >10) raio=-10;
     float l;
@@ -127,10 +129,10 @@ class Clase {
     if (corR>255)
       corR=0;
     raio=raio+20.0/40;
-    
+
       textSize(10);
     fill(163, 245, 239);
-    text("Minima Humedad", 850, 565); 
+    text("Minima Humedad", 850, 565);
     frameRate(5);
     if (raio >10) raio=-10;
     float n;
@@ -145,12 +147,12 @@ class Clase {
     if (corR>255)
       corR=0;
     raio=raio+20.0/40;
-    
-   
+
+
   }
 
- 
-  
+
+
 
 
 }
