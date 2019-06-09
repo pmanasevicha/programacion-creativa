@@ -10,6 +10,10 @@ class Viento {
 
   }
 
+	/*
+	No hay métodos diseñador para la representación gráfica/estética del dato.
+	*/
+
   void vel(float spin){
     speed += spin;
   }
@@ -20,10 +24,5 @@ class Viento {
     ellipse(0,0,30,3);
     stroke(255, 255, 255);
   }
-  //figura
-  void test(){
-    strokeWeight(100);
-    stroke(255);
-    point(x,y);
-  }
+  
 }
