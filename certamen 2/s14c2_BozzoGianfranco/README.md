@@ -36,28 +36,28 @@ En el caso de las visualizaciones 2 y 3, se tiene la variable de control de pode
 
 - Comunicación efectiva de complejidades encontradas al momento de explorar
 
-	No hay
+	Se entregó un documento bien formulado
 
 - Exploraciones simples conducentes a diseño en detalle
 
-	Escasas dentro del conocimiento que se tiene y por bajo el nivel esperado del curso
+	Se entregó un documento bien formulado
 
 - Escalas definidas con objetivos bien planteados
 
-	No hay
+	Se entregó un documento bien formulado
 
 - Diseño de diagramación en relación a los datos que construyen la escala
 
-	Posiciones generales correctas, en cambio las de los datos no. El 01 de Enero en visualizaciones circulares se hace arriba en el centro. 
+	Carece de detalles que puedan ayudar a la visualización en cuanto al soporte donde esta se encuentra
 
 - Navegación entre datos de una escala                                
 
-  Suficiente para el certamen
+  Existe de manera básica
 
 - Navegación entre escalas                                            
 
-  Se puede leer solo a más de un nivel
+  Existe de manera básica
 
 - Información utilitaria complementaria en cada visualización  
 
-  Suficiente para el certamen, falta usabilidad y coherencia en el orden
+  Existe inicialmente, luego se pierde y no se sabe donde se está.
