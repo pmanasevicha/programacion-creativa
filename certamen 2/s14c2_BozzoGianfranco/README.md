@@ -27,3 +27,37 @@ En el caso de las visualizaciones 2 y 3, se tiene la variable de control de pode
 -Visualización2: La tecla "s" para poder ir pasando de una semana a la siguiente y la tecla "a" para reiniciar la secuencia a la semana 1 cuando se quiera.
 
 -Visualización 3: La tecla "q" para activar el valor de ir cambiando de un día al posterior, al igual que reiniciar la secuencia al día uno cuando se quiera, y la tecla "w" para ir pasando de un día al siguiente
+
+
+
+
+
+###### Correcciones al certamen según pauta
+
+- Comunicación efectiva de complejidades encontradas al momento de explorar
+
+	No hay
+
+- Exploraciones simples conducentes a diseño en detalle
+
+	Escasas dentro del conocimiento que se tiene y por bajo el nivel esperado del curso
+
+- Escalas definidas con objetivos bien planteados
+
+	No hay
+
+- Diseño de diagramación en relación a los datos que construyen la escala
+
+	Posiciones generales correctas, en cambio las de los datos no. El 01 de Enero en visualizaciones circulares se hace arriba en el centro. 
+
+- Navegación entre datos de una escala                                
+
+  Suficiente para el certamen
+
+- Navegación entre escalas                                            
+
+  Se puede leer solo a más de un nivel
+
+- Información utilitaria complementaria en cada visualización  
+
+  Suficiente para el certamen, falta usabilidad y coherencia en el orden
