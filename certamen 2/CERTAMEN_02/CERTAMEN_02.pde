@@ -88,7 +88,8 @@ void draw() {           //Degrade
 
   for (int i = 0; i < 31; i++) {   //meses 31
     pushMatrix();
-    venero[i].vel(baseDatos.getFloat(i, 3)*0.1);
+
+    venero[i].vel(venero.[i].variableDelDato)*0.1);
     venero[i].spinner();
     popMatrix();
     pushMatrix();
