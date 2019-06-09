@@ -15,8 +15,6 @@ void setup() {
   int total = tabla.getRowCount(); //entrega el largo de la base de datos
   objetos = new Clase[total];
 
-  // lo mismo se puede escribir en una línea de código
-  objetos = new Clase[tabla.getRowCount()];
 
   // Iterar por la base de datos y llenar el array con esa información, creando un objeto por dato
 
