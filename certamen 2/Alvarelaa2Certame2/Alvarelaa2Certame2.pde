@@ -42,7 +42,7 @@ void setup() {
     float d = 750;
 
     // Con esas variables construyo un objeto
-    objetos[i] = new Clase(a, b, c, d, x, y, Ano, Mes, Dia, maxima, minima, dewpointc, meandewpointc, mindewpointc, maxhumidity, meanhumidity, minhumidity, maxsealevelpressure);
+    objetos[i] = new Clase(a, b, c, d, x, y, ano, mes, dia, maxima, minima, dewpointc, meandewpointc, mindewpointc, maxhumidity, meanhumidity, minhumidity, maxsealevelpressure);
   }
 }
 void draw() {
