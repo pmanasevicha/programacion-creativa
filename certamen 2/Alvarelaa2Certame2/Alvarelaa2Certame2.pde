@@ -55,14 +55,11 @@ void draw() {
 
   // Uso de los objetos como siempre
   for (int i = 0; i < objetos.length; i ++) {
-    //objetos[i].maxima();
-    //objetos[i].minima();
-    //objetos[i].dewpointc();
-    //objetos[i].meandewpointc();
-    //objetos[i].mindewpointc();
+
+
     objetos[i].maxhumidity();
     objetos[i].meanhumidity();
     objetos[i].minhumidity();
-    // objetos[i].maxsealevelpressure();
+
   }
 }
