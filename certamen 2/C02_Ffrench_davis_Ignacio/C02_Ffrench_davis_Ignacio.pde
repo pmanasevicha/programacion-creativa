@@ -1,10 +1,10 @@
 //Certamen 2 03/06/2019
 //Ignacio Ffrench-davis
- 
+
 //representar en una primera escala los datos anuales y que se comparen varias categorias como temperatura minima, temperatura maxima , humedad minima , humedad maxima,
 //punto de rocio minimo y punto de rocio maximo.
-//Quize representar en una segunda escala la representacion por mes de los datos de visibilidad pero 
-//no logre solucionar el problema de keypress por lo que tuve que desactivar la segunda escala 
+//Quize representar en una segunda escala la representacion por mes de los datos de visibilidad pero
+//no logre solucionar el problema de keypress por lo que tuve que desactivar la segunda escala
 
 // Array de objetos de mi clase
 Clase[] objetos;
@@ -14,16 +14,13 @@ Table tabla;
 
 void setup() {
   size (1000,1000);
-  // base de datos 
+  // base de datos
   tabla = loadTable("BaseDatos2015.csv", "header");
 
-  
+
   int total = tabla.getRowCount(); //entrega el largo de la base de datos
   println(total);
   objetos = new Clase[365];
-
-  // lo mismo se puede escribir en una línea de código
-  objetos = new Clase[tabla.getRowCount()];
 
   // Iterar por la base de datos y llenar el array con esa información, creando un objeto por dato
 
@@ -32,7 +29,7 @@ void setup() {
     // Creamos un nuevo objeto del tipo TableRow con la información de cada fila
     TableRow row = tabla.getRow(i);
 
-    // Con el, podemos ir a los métodos para hacer paridad entre el dato y el constructor    
+    // Con el, podemos ir a los métodos para hacer paridad entre el dato y el constructor
     // La paridad debe ser exacta en caracteres
     // Una variable del constructor por cada variable del dato (que queramos)
 
@@ -62,7 +59,7 @@ void setup() {
     int gradosviento =row.getInt("WindDirDegrees");
 
     objetos[i] = new Clase(ano,mes,dia, media, maxima, minima, maxrocio, medrocio, minrocio, maxhumedad, i,
-    medhumedad, minhumedad, maxpresion, medpresion, minpresion, maxvisibilidad, medvisibilidad, 
+    medhumedad, minhumedad, maxpresion, medpresion, minpresion, maxvisibilidad, medvisibilidad,
     minvisibilidad, maxviento, medviento, minviento, nubes, eventos, gradosviento);
   }
 }
@@ -75,7 +72,7 @@ void draw() {
   for (int i = 0; i < objetos.length; i ++) {
     objetos[i].temperaturamax();
     objetos[i].temperaturamin();
-    
+
   }
   for (int i = 0; i < objetos.length; i ++) {
     objetos[i].rocio();
@@ -84,7 +81,7 @@ void draw() {
   //Representacion por meses
   //**Lo tuve que desactivar ya que no logre solucionar el problema del keypress**
   //rango entre los cuales tomara los datos para representar un solo mes
-  
+
   /*
   for (int i = 0; i < objetos.length; i ++) {
      if (i >=2 && i<= 32){
@@ -119,13 +116,13 @@ void draw() {
     }
      if (i >=306 && i<= 335){
       objetos[i].noviembre();
-    } 
+    }
     if (i >=336 && i<= 366){
       objetos[i].diciembre();
-    } 
-    
+    }
+
   }*/
- 
+
  /* void keyPressed() {
  if (key == 'z') {
  objetos[1].temperaturamax();
