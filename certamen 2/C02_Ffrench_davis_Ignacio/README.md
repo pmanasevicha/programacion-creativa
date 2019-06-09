@@ -18,7 +18,7 @@
 
 - Navegación entre datos de una escala                                
 
-  Casi nula
+  No hay
 
 - Navegación entre escalas                                            
 
