@@ -24,6 +24,9 @@ class Clase {
     this.dewpoint = dewpoint;
     this.meandew = meandew;
     this.mindew = mindew;
+		// La rotación deja el 01 de Enero en el lugar 6 de un reloj circular.
+		// Cognitivamente el inicio de lectura en un círculo es arriba,
+		// como si fueran las 12 del día.
     this.rot = map(i, 0, 365, 0, TWO_PI);
 
   }

@@ -20,28 +20,28 @@ Tecla Numérica ¨2¨: Activación de Visualización 2
 
 - Comunicación efectiva de complejidades encontradas al momento de explorar
 
-  
+  Existe de manera básica lo que lleva a un resultado similar
 
 - Exploraciones simples conducentes a diseño en detalle
 
-  
+  Existe de manera básica lo que lleva a un resultado similar
 
 - Escalas definidas con objetivos bien planteados
 
-  
+  Bien hechas en el enunciado del trabajo
 
 - Diseño de diagramación en relación a los datos que construyen la escala
 
-  
+  Está bien para los pocos datos que se muestran
 
 - Navegación entre datos de una escala                                
 
-  
+  Básica ya que muestra solo dos grupos de variables
 
 - Navegación entre escalas                                            
 
-  
+  No hay
 
 - Información utilitaria complementaria en cada visualización  
 
-  
+  No hay
