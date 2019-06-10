@@ -40,10 +40,10 @@ void draw() {
 
   for (int i = 0; i < datos.getRowCount(); i++) {
     if (keyPressed) {
-      e[i].wind(/*datos.getFloat*/(i, 4));
+      e[i].wind(datos.getFloat(i, 4));
       e[i].select();
     } else if (mousePressed) {
-      e[i].diario(/*datos.getFloat*/(i, 4));
+      e[i].diario(datos.getFloat(i, 4));
     } else {
       e[i].evento();
       e[i].select();
