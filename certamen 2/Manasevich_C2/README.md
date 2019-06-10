@@ -27,3 +27,36 @@ Usar teclas:
 Detiene el sketch: A
 Reanuda el sketch: S
 Captura de pantalla: C
+
+
+###### Correcciones al certamen según pauta
+
+- Comunicación efectiva de complejidades encontradas al momento de explorar
+
+	Básica para el nivel esperado
+
+- Exploraciones simples conducentes a diseño en detalle
+
+	Básica para el nivel esperado
+
+- Escalas definidas con objetivos bien planteados
+
+	No hay
+
+- Diseño de diagramación en relación a los datos que construyen la escala
+
+	No hay
+
+- Navegación entre datos de una escala                                
+
+	No hay
+
+- Navegación entre escalas                                            
+
+	No hay
+
+- Información utilitaria complementaria en cada visualización  
+
+	No hay
+
+No me queda claro nada de tu trabajo Pedro, me preocupa tu desarrollo para lo que queda. Necesito convesar contigo.

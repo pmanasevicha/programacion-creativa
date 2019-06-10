@@ -40,7 +40,7 @@ Table tabla;
 
 
 void setup() {
-  frameRate(1);
+  // frameRate(1);
 
   size(900,900);
   background(255);
