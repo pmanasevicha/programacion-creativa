@@ -20,6 +20,7 @@
 # INSTRUCCIONES:
 
   - Tecla 1: Para visualización general. (Anual)
+  - 
   - Tecla 2: Para visualización Mensual.
            - Apretando las flechas del teclado (izquierda/derecha) se avanza y se retrocede.
   - Tecla 3: Para visualización semanal.
@@ -33,29 +34,29 @@
 
 - Comunicación efectiva de complejidades encontradas al momento de explorar
 
-  No hay
+  Declara verbalmente complejidades a desarrollar
 
 - Exploraciones simples conducentes a diseño en detalle
 
-  No hay
+  Coherentes durante el proceso
 
 - Escalas definidas con objetivos bien planteados
 
-  No hay
+  Muy bien acotadas
 
 - Diseño de diagramación en relación a los datos que construyen la escala
 
-  Casi nula
+  Suficiente para el certamen, mejorar 
 
 - Navegación entre datos de una escala                                
 
-  Casi nula
+  Absoluta
 
 - Navegación entre escalas                                            
 
-  No hay
+  Bien diseñada e implementada
 
 - Información utilitaria complementaria en cada visualización  
 
-  No hay
+  De acuerdo con el encargo, falta destacar el inicio del año en la visualización anual
 
