@@ -16,7 +16,7 @@ void setup() {
     TableRow row = tabla.getRow(i);
 
 
-    float maxtemp = row.getInt("Max TemperatureC");//se toman todos los valores de la esta columnay las de abajo 
+    float maxtemp = row.getInt("Max TemperatureC");//se toman todos los valores de la esta columnay las de abajo
     float minhum = row.getInt(" Min Humidity");
     float mintemp = row.getInt("Min TemperatureC");
 
@@ -25,7 +25,7 @@ void setup() {
   noStroke();
 }
 void draw() {
- 
+
 
 
   translate(width/2, height/2);
