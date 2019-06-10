@@ -45,15 +45,24 @@ Existen dos bases de datos **banco** y **clima** cada una tiene requerimientos e
 
 
 
-## Pauta de evaluación
+## Pauta de evaluación preentrega
 
 | Descriptor                                                   | 1 a 4 |
 | ------------------------------------------------------------ | ----- |
-| Análisis de la base de datos reflejados en diagramas en preentrega |       |
+| Análisis de la base de datos y requerimientos reflejados en diagramas lógicos |       |
+| Descripción de los atributos necesarios para desarrollar     |       |
+| Descripción de métodos necesarios para desarrollar           |       |
+
+## Pauta de evaluación examen
+
+| Descriptor                                                   | 1 a 4 |
+| ------------------------------------------------------------ | ----- |
 | README.md que describe el uso y resultado                    |       |
 | Comentarios en el programa que describen la lógica escrita en código |       |
 | Requerimiento 1                                              |       |
 | Requerimiento 2                                              |       |
 | Requerimiento 3                                              |       |
 | El alumno responde la lógica de una parte de su programa     |       |
+| Escribe Orientado a Objetos                                  |       |
+| No hay faltas ortográficas                                   |       |
 
