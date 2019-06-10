@@ -23,13 +23,13 @@ void draw() {
   image (img,0,0);
   for (int i = 0; i < Data.length; i++) {
     float ejex = map(float(Data[i/12][16]), 0, 150, 0, width-m); //se divide el valor de i por 12 para así poder acceder a los valores de un mes.
-    float ejey= map(float(Data[i/12][17]), 0, 42, 0, height); 
-    float gradosViento = map(float(Data[i/12][22]), 0, 150, 0, 20 ); 
+    float ejey= map(float(Data[i/12][17]), 0, 42, 0, height);
+    float gradosViento = map(float(Data[i/12][22]), 0, 150, 0, 20 );
 
     noStroke();
-    fill(0, 0, gradosViento, 20); 
+    fill(0, 0, gradosViento, 20);
     stroke(0, 150, 100);
-    line(ejex, i, ejey, i); 
+    line(ejex, i, ejey, i);
     println(Data[i/12][17]);
   }
 }
