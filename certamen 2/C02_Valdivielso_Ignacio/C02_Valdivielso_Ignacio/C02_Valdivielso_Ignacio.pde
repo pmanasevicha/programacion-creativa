@@ -11,7 +11,7 @@ void setup() {
 
   // inicalizamos el array con la cantidad de filas del archivo
   int total = tabla.getRowCount(); //entrega el largo de la base de datos
-  objetos = new Clase[total]; 
+  objetos = new Clase[total];
 
   // lo mismo se puede escribir en una línea de código
   objetos = new Clase[tabla.getRowCount()]; 
@@ -68,11 +68,11 @@ void draw() {
       //objetos[i].evento(); //Punto que da a conocer el evento que ocurrio ese día (Lluvia, neblina, etc.)
       //objetos[i].funcionmin()*/
     } else {//si no es llamada ninguna visualización, esta sera la que aparesca al correr el codigo
-      objetos[i].Textoinicial();//texto inicial 
+      objetos[i].Textoinicial();//texto inicial
       pushMatrix();
       textSize(70);
       translate(width/2, height/2);
-      text("Certamen 2", -150, 0); 
+      text("Certamen 2", -150, 0);
       text("Ignacio Valdivielso", -260, 70);
       text("Visualización de datos", -330, 140);
       popMatrix();
