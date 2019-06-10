@@ -40,5 +40,5 @@ void draw() {
   background(0);
   for (int i = 0; i < objetos.length; i++) {
     objetos[i].funcion();
-  }  
+  }
 }
