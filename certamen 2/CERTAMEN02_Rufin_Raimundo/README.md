@@ -10,20 +10,20 @@
 
 - Escalas definidas con objetivos bien planteados
 
-	Cambian las escalas de tiempo, pero la representación es la misma
+	Suficientes para la entrega
 
 - Diseño de diagramación en relación a los datos que construyen la escala
 
-	Existe precariamente para lo esperado
+	Coherente en general, falta detalle
 
 - Navegación entre datos de una escala                                
 
-  Existe de manera básica, se entorpece en el uso, se pierde el lugar que se está mirando
+	Bien ejecutado, faltan detalles
 
 - Navegación entre escalas                                            
 
-  Existe de manera suficiente
+	Bien ejecutado, faltan detalles
 
 - Información utilitaria complementaria en cada visualización  
 
-  Existe de manera general, y no se sabe cuándo empiezan los datos
+  No hay
