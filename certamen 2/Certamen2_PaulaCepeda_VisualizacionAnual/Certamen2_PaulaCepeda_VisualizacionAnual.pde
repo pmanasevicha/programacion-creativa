@@ -15,7 +15,7 @@ Clase [] octubre= new Clase[31];
 Clase [] noviembre= new Clase[30];
 Clase [] diciembre= new Clase[31];
 //array para visualizacion total
-Clase [] total= new Clase[365]; 
+Clase [] total= new Clase[365];
 
 
 Table tabla;
@@ -29,7 +29,7 @@ int u=18; //columna de Velocidad Maxima de vientos
 
 void setup() {
   size(1000, 800);
-  tabla = loadTable("baseDatos2015MD.csv", "header"); //cargar tabla e ignorar la primera fila
+  tabla = loadTable("baseDatos2015MD.csv", "header"); //cargar */tabla*/ e ignorar la primera fila
   frameRate(5);
 }
 
@@ -55,68 +55,68 @@ void draw() {
 // Visualizacion agrupada por meses, días superpuestos en elipses de radio proporcional a la velocidad de los vientos.
 
   for (int i=0; i<31; i++) {
-    enero[i]= new Clase(tabla.getInt(i, 2), tabla.getInt(i, 18), lugar, trimestre1, tabla.getString(i, 23));
+    enero[i]= new Clase(*/tabla*/.getInt(i, 2), */tabla*/.getInt(i, 18), lugar, trimestre1, */tabla*/.getString(i, 23));
     enero[i].colores();
     enero[i].mesesful();
-  }   
+  }
 
   for (int i=0; i<28; i++) {
-    febrero[i]= new Clase(tabla.getInt(i+31, 2), tabla.getInt(i+31, 18), lugar+200, trimestre1, tabla.getString(i+31, 23));
+    febrero[i]= new Clase(*/tabla*/.getInt(i+31, 2), */tabla*/.getInt(i+31, 18), lugar+200, trimestre1, */tabla*/.getString(i+31, 23));
     febrero[i].colores();
     febrero[i].mesesful();
-  }    
+  }
 
-  for (int i=0; i<31; i++) {  
-    marzo[i]= new Clase(tabla.getInt(i, 2), tabla.getInt(i+59, 18), lugar+400, trimestre1, tabla.getString(i+59, 23));
+  for (int i=0; i<31; i++) {
+    marzo[i]= new Clase(*/tabla*/.getInt(i, 2), */tabla*/.getInt(i+59, 18), lugar+400, trimestre1, */tabla*/.getString(i+59, 23));
     marzo[i].colores();
     marzo[i].mesesful();
   }
-  for (int i=0; i<30; i++) {  
-    abril[i]= new Clase(tabla.getInt(i, 2), tabla.getInt(i+89, 18), lugar+600, trimestre1, tabla.getString(i+89, 23));
+  for (int i=0; i<30; i++) {
+    abril[i]= new Clase(*/tabla*/.getInt(i, 2), */tabla*/.getInt(i+89, 18), lugar+600, trimestre1, */tabla*/.getString(i+89, 23));
     abril[i].colores();
     abril[i].mesesful();
   }
 
-  for (int i=0; i<31; i++) {  
-    mayo[i]= new Clase(tabla.getInt(i, 2), tabla.getInt(i+120, 18), lugar, trimestre2, tabla.getString(i+120, 23));
+  for (int i=0; i<31; i++) {
+    mayo[i]= new Clase(*/tabla*/.getInt(i, 2), */tabla*/.getInt(i+120, 18), lugar, trimestre2, */tabla*/.getString(i+120, 23));
     mayo[i].colores();
     mayo[i].mesesful();
-  }  
-  for (int i=0; i<30; i++) {  
-    junio[i]= new Clase(tabla.getInt(i, 2), tabla.getInt(i+150, 18), lugar+200, trimestre2, tabla.getString(i+150, 23));
+  }
+  for (int i=0; i<30; i++) {
+    junio[i]= new Clase(*/tabla*/.getInt(i, 2), */tabla*/.getInt(i+150, 18), lugar+200, trimestre2, */tabla*/.getString(i+150, 23));
     junio[i].colores();
     junio[i].mesesful();
-  }   
-  for (int i=0; i<31; i++) {  
-    julio[i]= new Clase(tabla.getInt(i, 2), tabla.getInt(i+181, 18), lugar+400, trimestre2, tabla.getString(i+181, 23));
+  }
+  for (int i=0; i<31; i++) {
+    julio[i]= new Clase(*/tabla*/.getInt(i, 2), */tabla*/.getInt(i+181, 18), lugar+400, trimestre2, */tabla*/.getString(i+181, 23));
     julio[i].colores();
     julio[i].mesesful();
-  }   
-  for (int i=0; i<31; i++) {  
-    agosto[i]= new Clase(tabla.getInt(i, 2), tabla.getInt(i+212, 18), lugar+600, trimestre2, tabla.getString(i+212, 23));
+  }
+  for (int i=0; i<31; i++) {
+    agosto[i]= new Clase(*/tabla*/.getInt(i, 2), */tabla*/.getInt(i+212, 18), lugar+600, trimestre2, */tabla*/.getString(i+212, 23));
     agosto[i].colores();
     agosto[i].mesesful();
-  }   
-  for (int i=0; i<30; i++) {  
-    septiembre[i]= new Clase(tabla.getInt(i, 2), tabla.getInt(i+242, 18), lugar, trimestre3, tabla.getString(i+242, 23));
+  }
+  for (int i=0; i<30; i++) {
+    septiembre[i]= new Clase(*/tabla*/.getInt(i, 2), */tabla*/.getInt(i+242, 18), lugar, trimestre3, */tabla*/.getString(i+242, 23));
     septiembre[i].colores();
     septiembre[i].mesesful();
-  }   
-  for (int i=0; i<31; i++) {  
-    octubre[i]= new Clase(tabla.getInt(i, 2), tabla.getInt(i+273, 18), lugar+200, trimestre3, tabla.getString(i+273, 23));
+  }
+  for (int i=0; i<31; i++) {
+    octubre[i]= new Clase(*/tabla*/.getInt(i, 2), */tabla*/.getInt(i+273, 18), lugar+200, trimestre3, */tabla*/.getString(i+273, 23));
     octubre[i].colores();
     octubre[i].mesesful();
-  } 
-  for (int i=0; i<30; i++) {  
-    noviembre[i]= new Clase(tabla.getInt(i, 2), tabla.getInt(i+303, 18), lugar+400, trimestre3, tabla.getString(i+303, 23));
+  }
+  for (int i=0; i<30; i++) {
+    noviembre[i]= new Clase(*/tabla*/.getInt(i, 2), */tabla*/.getInt(i+303, 18), lugar+400, trimestre3, */tabla*/.getString(i+303, 23));
     noviembre[i].colores();
     noviembre[i].mesesful();
-  } 
-  for (int i=0; i<31; i++) {  
-    diciembre[i]= new Clase(tabla.getInt(i, 2), tabla.getInt(i+334, 18), lugar+600, trimestre3, tabla.getString(i+334, 23));
+  }
+  for (int i=0; i<31; i++) {
+    diciembre[i]= new Clase(*/tabla*/.getInt(i, 2), */tabla*/.getInt(i+334, 18), lugar+600, trimestre3, */tabla*/.getString(i+334, 23));
     diciembre[i].colores();
     diciembre[i].mesesful();
-  }   
+  }
 ////////////////
 
   if (keyPressed) {
@@ -125,7 +125,7 @@ void draw() {
       textAlign(CENTER);
       text("V I Z  A N U A L",width/2, 750);
       for (int i=0; i<365; i++) {
-        total[i]= new Clase(tabla.getInt(i, 2), tabla.getInt(u, 18)*4, width/2, height/2, tabla.getString(i, 23));
+        total[i]= new Clase(*/tabla*/.getInt(i, 2), */tabla*/.getInt(u, 18)*4, width/2, height/2, */tabla*/.getString(i, 23));
         u=u+1;
         total[i].colores();
         total[i].totalano();
@@ -140,7 +140,7 @@ void draw() {
       textAlign(CENTER);
       text("V I Z  M E N S U A L",width/2, 750);
       for (int i=0; i<31; i++) {
-        total[i]= new Clase(tabla.getInt(i, 2), tabla.getInt(u, 18)*4, width/2, height/2, tabla.getString(i, 23));
+        total[i]= new Clase(*/tabla*/.getInt(i, 2), */tabla*/.getInt(u, 18)*4, width/2, height/2, */tabla*/.getString(i, 23));
         u=u+1;
         total[i].colores();
         total[i].totalano();
@@ -153,9 +153,9 @@ void draw() {
 if (key == 's') { //mantener apretada para ver el resumen del año por semanas
       background(0);
       textAlign(CENTER);
-      text("V I Z  S E M A N A L",width/2, 750);      
+      text("V I Z  S E M A N A L",width/2, 750);
       for (int i=0; i<7; i++) {
-        total[i]= new Clase(tabla.getInt(i, 2), tabla.getInt(u, 18)*4, width/2, height/2, tabla.getString(i, 23));
+        total[i]= new Clase(*/tabla*/.getInt(i, 2), */tabla*/.getInt(u, 18)*4, width/2, height/2, */tabla*/.getString(i, 23));
         u=u+1;
         total[i].colores();
         total[i].totalano();
@@ -167,12 +167,12 @@ if (key == 's') { //mantener apretada para ver el resumen del año por semanas
           if (key == 'd') { //mantener apretada para ver el detalle diario
       background(0);
       textAlign(CENTER);
-      text("V I Z  D I A R I A",width/2, 750);      
+      text("V I Z  D I A R I A",width/2, 750);
       for (int i=0; i<1; i++) {
-        total[i]= new Clase(tabla.getInt(i, 2), tabla.getInt(u, 18)*4, width/2, height/2, tabla.getString(i, 23));
+        total[i]= new Clase(*/tabla*/.getInt(i, 2), */tabla*/.getInt(u, 18)*4, width/2, height/2, */tabla*/.getString(i, 23));
         u=u+1;
         total[i].colores();  //No pude hacer que leyera el color de la linea :(
-        total[i].totalano(); 
+        total[i].totalano();
         if (u>364) {
           u=0;
         }
